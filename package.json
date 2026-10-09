@@ -1,0 +1,8 @@
+{
+  "name": "igs-group-web",
+  "version": "1.0.0",
+  "description": "IGS Group USA — landing (ES/EN) + precalificador de naves con PDF",
+  "main": "server.js",
+  "scripts": { "start": "node server.js", "test": "node test/clasificador.test.js" },
+  "dependencies": { "express": "^4.19.2", "pdfkit": "^0.15.0" }
+}

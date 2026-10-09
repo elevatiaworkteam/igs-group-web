@@ -1,0 +1,27 @@
+'use strict';
+const assert = require('assert');
+const { clasificar, normalizar } = require('../lib/clasificador');
+const base = { mezzanine: 'no', aislamiento: 'no', cerramiento: 'basico', docks: 1, puertas: 2, grandes_luces: 'no', altura_libre_m: 7, cargas: 'no', proceso_especial: 'no', areas_admin: 'no', alcance: 'cerramientos', condicion: 'CIF', area_m2: 1500 };
+const run = (o) => clasificar(normalizar(Object.assign({}, base, o)));
+let n = 0; const t = (name, fn) => { fn(); n++; console.log('✓', name); };
+
+t('1 Almacén sencillo → Esencial 0', () => { const r = run({}); assert.equal(r.categoria, 'Esencial'); assert.equal(r.puntos, 0); assert.equal(r.estado, 'preliminar_completa'); assert.ok(r.estimado && r.estimado.min === 136500 && r.estimado.max === 150000, JSON.stringify(r.estimado)); });
+t('2 Almacén con aislamiento → Esencial 1 (banda aislado)', () => { const r = run({ aislamiento: 'si' }); assert.equal(r.categoria, 'Esencial'); assert.equal(r.puntos, 1); assert.equal(r.banda.paquete, 'aislado'); assert.equal(r.estimado.min, 198000); });
+t('3 Almacén con mezzanine → Industrial 2 por regla', () => { const r = run({ mezzanine: 'si' }); assert.equal(r.categoria, 'Industrial'); assert.equal(r.puntos, 2); assert.ok(r.reglas.some(x => x.clave === 'mezzanine')); });
+t('4 Centro logístico → Industrial 3', () => { const r = run({ aislamiento: 'si', docks: 2, altura_libre_m: 10 }); assert.equal(r.categoria, 'Industrial'); assert.equal(r.puntos, 3); });
+t('5 Taller con puente grúa → Especializada directa (3 pts, sin duplicar)', () => { const r = run({ cargas: 'si', cargas_tipos: ['puente_grua'] }); assert.equal(r.categoria, 'Especializada'); assert.equal(r.puntos, 3); assert.equal(r.estimado, null); assert.equal(r.motivo_sin_estimado, 'especializada'); });
+t('6 Nave con varios requisitos → Especializada 7 pts', () => { const r = run({ mezzanine: 'si', aislamiento: 'si', docks: 2, luz_libre_m: 36, altura_libre_m: 9 }); assert.equal(r.puntos, 7); assert.equal(r.categoria, 'Especializada'); });
+t('7 Consulta incompleta → Pendiente (no Esencial por defecto)', () => { const r = run({ mezzanine: 'pd', altura_libre_m: '', grandes_luces: 'pd' }); assert.equal(r.categoria, 'Pendiente'); assert.equal(r.puntos, 0); assert.deepEqual(r.pendientes.sort(), ['altura', 'luz', 'mezzanine']); assert.equal(r.estimado, null); });
+t('Registro provisional: al menos Industrial por mezzanine, altura/luz/cargas pendientes', () => { const r = run({ mezzanine: 'si', altura_libre_m: '', grandes_luces: 'pd', cargas: 'pd' }); assert.equal(r.etiqueta, 'Al menos Industrial'); assert.equal(r.estado, 'provisional'); assert.equal(r.puntos, 2); assert.ok(r.estimado && r.estimado.provisional); });
+t('Pendientes que no cambian la categoría → preliminar completa', () => { const r = run({ areas_admin: 'pd', docks: '' }); assert.equal(r.categoria, 'Esencial'); assert.equal(r.estado, 'preliminar_completa'); assert.deepEqual(r.pendientes.sort(), ['areas', 'docks']); });
+t('Niveles ≥ 2 cuenta como mezzanine (una sola vez)', () => { const r = run({ niveles: 2, mezzanine: 'si' }); assert.equal(r.puntos, 2); });
+t('Panel aislado suma aislamiento una sola vez', () => { const r = run({ cerramiento: 'panel_aislado', aislamiento: 'pd' }); assert.equal(r.puntos, 1); assert.equal(r.banda.paquete, 'aislado'); });
+t('Luz dentro de referencia aunque marque "sí" → sin puntos', () => { const r = run({ grandes_luces: 'si', luz_libre_m: 24 }); assert.equal(r.puntos, 0); });
+t('Luz "sí" sin medida → pendiente', () => { const r = run({ grandes_luces: 'si' }); assert.ok(r.pendientes.includes('luz')); assert.equal(r.categoria, 'Pendiente'); });
+t('Refrigeración → Especializada sin puntos', () => { const r = run({ proceso_especial: 'si' }); assert.equal(r.categoria, 'Especializada'); assert.equal(r.puntos, 0); });
+t('Cargas especiales (racks) → Especializada 2 pts', () => { const r = run({ cargas: 'si', cargas_tipos: ['racks_altos'] }); assert.equal(r.categoria, 'Especializada'); assert.equal(r.puntos, 2); });
+t('Solo estructura → sin estimado por alcance', () => { const r = run({ alcance: 'estructura' }); assert.equal(r.estimado, null); assert.equal(r.motivo_sin_estimado, 'alcance'); });
+t('Aislamiento por definir → sin estimado', () => { const r = run({ aislamiento: 'pd' }); assert.equal(r.estimado, null); assert.equal(r.motivo_sin_estimado, 'aislamiento_pendiente'); });
+t('Área por largo × ancho', () => { const r = clasificar(normalizar(Object.assign({}, base, { area_m2: '', largo_m: 60, ancho_m: 30 }))); assert.equal(r.estimado.area_m2, 1800); });
+t('Umbrales configurables', () => { const r = clasificar(normalizar(Object.assign({}, base, { altura_libre_m: 9 })), { umbral_altura_m: 10 }); assert.equal(r.puntos, 0); });
+console.log(`\n${n} pruebas OK`);
