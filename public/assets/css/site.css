@@ -37,7 +37,7 @@ section{padding:72px 0}section.tight{padding:48px 0}.sec-line{border-top:1px sol
 .hero-media{position:relative}.hero-media img{border-radius:var(--radius);box-shadow:var(--shadow);aspect-ratio:3/2;object-fit:cover}
 .hero-media::after{content:"";position:absolute;left:-10px;bottom:34px;width:110px;height:4px;background:var(--red);transform:rotate(-28deg);transform-origin:left}
 .caption{font-size:.75rem;color:var(--steel);margin-top:8px}
-@media(max-width:900px){.hero .container{grid-template-columns:1fr;gap:28px}.hero{padding:40px 0 36px}}
+@media(max-width:900px){.hero .container{grid-template-columns:1fr;gap:28px}.hero{padding:40px 0 36px}.hero-media::after{display:none}}
 /* tarjetas */
 .card{border:1px solid var(--line);border-radius:var(--radius);padding:26px;background:#fff;height:100%}
 .card.light{background:var(--light);border-color:transparent}.card .num{font-family:var(--display);font-weight:700;color:var(--red);font-size:.9rem;letter-spacing:.1em;margin-bottom:10px}
