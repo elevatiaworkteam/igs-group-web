@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" class="no-js">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>IGS Group USA | Estructuras metálicas y suministros industriales</title>
-<meta name="description" content="IGS Group USA suministra estructuras metálicas, componentes y materiales industriales para proyectos y operaciones en República Dominicana. Precalifique su nave en línea.">
+<meta name="description" content="IGS Group USA suministra estructuras metálicas, componentes y materiales industriales para proyectos y operaciones industriales. Precalifique su nave en línea.">
 <link rel="canonical" href="https://www.igsgroupusa.com/">
 <link rel="alternate" hreflang="es" href="https://www.igsgroupusa.com/">
 <link rel="alternate" hreflang="en" href="https://www.igsgroupusa.com/en/">
@@ -12,114 +12,590 @@
 <meta property="og:description" content="Soluciones en acero para desarrollar proyectos y abastecer operaciones. Precalifique su nave en línea.">
 <meta property="og:image" content="https://www.igsgroupusa.com/assets/img/nave-exterior.jpg">
 <meta property="og:type" content="website">
+<meta name="theme-color" content="#000000">
 <link rel="icon" href="/assets/img/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<script src="/assets/js/site-config.js?v=1"></script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"IGS Group USA, Corp.","url":"https://www.igsgroupusa.com/","logo":"https://www.igsgroupusa.com/assets/img/logo-igs.png","email":"sfernandez@igsgroupusa.com","address":{"@type":"PostalAddress","streetAddress":"10115 Costa del Sol Blvd","addressLocality":"Doral","addressRegion":"FL","postalCode":"33178","addressCountry":"US"},"areaServed":"DO","description":"Estructuras metálicas y suministros industriales para proyectos y operaciones en República Dominicana."}</script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="/assets/img/nave-exterior.jpg" imagesrcset="/assets/img/nave-exterior-800.jpg 800w, /assets/img/nave-exterior.jpg 1536w" imagesizes="100vw" fetchpriority="high">
+<script>document.documentElement.className='js';</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"IGS Group USA, Corp.","url":"https://www.igsgroupusa.com/","logo":"https://www.igsgroupusa.com/assets/img/logo-igs.png","email":"sfernandez@igsgroupusa.com","address":{"@type":"PostalAddress","streetAddress":"10115 Costa del Sol Blvd","addressLocality":"Doral","addressRegion":"FL","postalCode":"33178","addressCountry":"US"},"description":"Estructuras metálicas y suministros industriales para proyectos y operaciones industriales."}</script>
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --red:#ED1C24;--red-solid:#E0151D;--red-dark:#C4161C;
+  --black:#000;--ink:#0B0C0E;--ink-2:#15161A;--steel:#626970;--steel-dark:#5B6168;--steel-light:#A9AFB6;--steel-note:#8E959C;--light:#F3F4F5;--white:#fff;
+  --line-dark:rgba(255,255,255,.14);--line-light:rgba(0,0,0,.12);
+  --display:"Bebas Neue","Montserrat","Arial Narrow",Impact,sans-serif;
+  --head:"Montserrat","Arial",sans-serif;--body:"Inter","Arial",sans-serif;
+  --max:1320px;--gutter:clamp(16px,4vw,56px);
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:hidden}
+body{margin:0;font-family:var(--body);font-size:16px;line-height:1.65;color:var(--ink);background:var(--black);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.lock{overflow:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3,h4{margin:0;line-height:1.1;font-family:var(--head);font-weight:700;letter-spacing:-.015em}
+p{margin:0 0 1em}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.sr{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.skip{position:absolute;left:16px;top:-60px;z-index:100;background:var(--red-solid);color:#fff;font-family:var(--head);font-weight:700;font-size:.85rem;padding:12px 18px;border-radius:999px;text-decoration:none;transition:top .2s}
+.skip:focus{top:16px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+section[id]{scroll-margin-top:0}
+
+/* ============ TYPO UTIL ============ */
+.display{font-family:var(--display);font-weight:400;letter-spacing:.01em;text-transform:uppercase;line-height:.92}
+.meta{font-family:var(--head);font-weight:600;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase}
+.eyebrow{display:flex;align-items:center;gap:14px;margin:0 0 22px;color:var(--red)}
+.eyebrow::before{content:"";width:34px;height:2px;background:var(--red);flex:none}
+.lead{font-size:clamp(1.05rem,1.4vw,1.25rem);line-height:1.6;max-width:58ch}
+.h-xl{font-size:clamp(2.4rem,5.2vw,4.6rem);line-height:1}
+.h-lg{font-size:clamp(1.9rem,3.6vw,3rem)}
+.note{font-size:.75rem;letter-spacing:.04em}
+
+/* Themes */
+.dark{background:var(--black);color:#E6E8EB}
+.dark h1,.dark h2,.dark h3,.dark h4{color:#fff}
+.dark p{color:#C9CDD2}
+.dark .muted{color:var(--steel-light)}
+.dark .note{color:var(--steel-note)}
+.light-sec{background:var(--white);color:var(--ink)}
+.light-sec p{color:#3C4047}
+.light-sec .muted{color:var(--steel)}
+.grey-sec{background:var(--light);color:var(--ink)}
+.grey-sec p{color:#3C4047}
+.grey-sec .muted{color:var(--steel-dark)}
+.light-sec .note,.grey-sec .note{color:var(--steel-dark)}
+.light-sec .eyebrow,.grey-sec .eyebrow{color:var(--red-dark)}
+
+/* ============ BUTTONS ============ */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--head);font-weight:700;font-size:.92rem;letter-spacing:.02em;padding:16px 28px;border-radius:999px;border:2px solid transparent;text-decoration:none;cursor:pointer;line-height:1;transition:transform .35s var(--ease),background .25s,color .25s,border-color .25s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn-red{background:var(--red-solid);border-color:var(--red-solid);color:#fff}
+.btn-red:hover{background:var(--red-dark);border-color:var(--red-dark)}
+.btn-white{background:#fff;border-color:#fff;color:var(--black)}
+.btn-white:hover{background:#EDEEF0;border-color:#EDEEF0}
+.btn-ghost{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.5);color:#fff;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.12)}
+.btn-dark{background:var(--black);border-color:var(--black);color:#fff}
+.btn-dark:hover{background:#222;border-color:#222}
+.btn-outline-dark{background:transparent;border-color:var(--black);color:var(--black)}
+.btn-outline-dark:hover{background:var(--black);color:#fff}
+.btn .arr{display:inline-block;transition:transform .35s var(--ease)}
+.btn:hover .arr{transform:translateX(4px)}
+.btn:disabled{opacity:.55;cursor:default;transform:none}
+
+/* ============ NAV (vidrio; cambia de tema según la sección) ============ */
+.site-header{position:fixed;inset:0 0 auto 0;z-index:60}
+.site-header .bar{display:flex;align-items:center;justify-content:space-between;height:78px;gap:16px;position:relative;z-index:1}
+.site-header::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.18);backdrop-filter:blur(14px) saturate(1.3);-webkit-backdrop-filter:blur(14px) saturate(1.3);border-bottom:1px solid rgba(255,255,255,.08);opacity:0;transition:opacity .35s,background .35s,border-color .35s}
+.site-header.scrolled::before{opacity:1;background:rgba(0,0,0,.55)}
+.site-header[data-theme=light].scrolled::before{background:rgba(255,255,255,.74);border-bottom-color:rgba(0,0,0,.08)}
+.logo{display:inline-flex;align-items:center}
+.logo img{height:44px;width:auto}
+.logo .lg-dark{display:none}
+.site-header[data-theme=light]:not(.menu-open) .lg-dark{display:block}
+.site-header[data-theme=light]:not(.menu-open) .lg-white{display:none}
+.nav{display:flex;align-items:center;gap:30px}
+.nav a{text-decoration:none;font-weight:500;font-size:.9rem;color:#fff;opacity:.88;transition:opacity .2s,color .3s}
+.nav a:hover{opacity:1}
+.nav a.lang{font-family:var(--head);font-weight:700;font-size:.72rem;letter-spacing:.14em;border:1px solid rgba(255,255,255,.4);border-radius:999px;padding:7px 12px;opacity:1}
+.nav a.lang:hover{border-color:currentColor}
+.nav .btn{opacity:1;padding:12px 22px;font-size:.82rem;color:#fff}
+.nav-toggle{display:none;background:none;border:0;width:46px;height:46px;cursor:pointer;padding:10px;border-radius:999px}
+.nav-toggle span{display:block;height:2px;background:#fff;margin:6px 0;transition:transform .3s,opacity .3s,background .3s}
+.site-header[data-theme=light]:not(.menu-open) .nav-toggle span{background:#000}
+@media(min-width:961px){
+  .site-header[data-theme=light] .nav a{color:var(--black)}
+  .site-header[data-theme=light] .nav a.lang{border-color:rgba(0,0,0,.35)}
+  .site-header[data-theme=light] .nav .btn{color:#fff}
+}
+@media(max-width:960px){
+  .nav{position:fixed;inset:0;background:rgba(0,0,0,.94);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);flex-direction:column;align-items:flex-start;justify-content:center;padding:100px var(--gutter) 40px;gap:8px;display:none;z-index:0;overflow-y:auto}
+  .nav.open{display:flex}
+  .nav a{font-family:var(--display);font-size:clamp(2.4rem,9vw,3.6rem);text-transform:uppercase;letter-spacing:.02em;line-height:1;padding:8px 0;opacity:1;color:#fff}
+  .nav a.lang{font-family:var(--head);font-size:.75rem;letter-spacing:.14em;margin-top:18px}
+  .nav .btn{margin-top:18px;font-family:var(--head);font-size:.9rem;text-transform:none;letter-spacing:.02em;padding:16px 28px}
+  .nav-toggle{display:block}
+  .site-header.menu-open .nav-toggle span{background:#fff}
+  .site-header.menu-open .nav-toggle span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+  .site-header.menu-open .nav-toggle span:nth-child(2){opacity:0}
+  .site-header.menu-open .nav-toggle span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+}
+@media(max-width:960px) and (max-height:520px){.nav{justify-content:flex-start;padding-top:90px}.nav a{font-size:1.8rem;padding:4px 0}}
+
+/* ============ HERO ============ */
+.hero{position:relative;min-height:min(100vh,1000px);min-height:min(100svh,1000px);display:grid;align-items:end;overflow:hidden;color:#fff;isolation:isolate}
+.hero-bg{position:absolute;inset:-8% 0 -8% 0;z-index:-2;will-change:transform}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 60%}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:
+  linear-gradient(180deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,.12) 30%,rgba(0,0,0,.28) 55%,rgba(0,0,0,.94) 100%)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(70% 60% at 50% 100%,rgba(0,0,0,.6),transparent 70%)}
+.hero-meta{position:absolute;left:0;right:0;top:98px;display:flex;justify-content:space-between;gap:16px;padding:0 var(--gutter);color:rgba(255,255,255,.82)}
+.hero-meta .meta{display:flex;align-items:center;gap:10px}
+.hero-meta .dot{width:6px;height:6px;border-radius:50%;background:var(--red);display:inline-block}
+.hero-inner{padding:120px var(--gutter) 40px;width:100%;max-width:var(--max);margin:0 auto;text-align:center}
+.badge{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.24);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:999px;padding:8px 16px 8px 10px;font-family:var(--head);font-weight:600;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#fff;margin-bottom:26px;white-space:nowrap}
+.badge .dot{width:8px;height:8px;background:var(--red);border-radius:50%;display:inline-block;box-shadow:0 0 0 4px rgba(237,28,36,.25)}
+.badge .b-short{display:none}
+.hero h1{font-size:clamp(4rem,10vw,9.5rem);color:#fff;margin:0 0 .2em;text-shadow:0 2px 40px rgba(0,0,0,.35)}
+.hero h1 .accent{color:var(--red)}
+.hero h1>span{display:block}
+.hero .lead{margin:0 auto 30px;color:rgba(255,255,255,.86);max-width:66ch}
+.hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.hero-foot{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-top:38px;color:rgba(255,255,255,.78);font-size:.72rem;letter-spacing:.06em}
+.hero-foot .scroll{display:inline-flex;align-items:center;gap:10px;font-family:var(--head);font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+.hero-foot .scroll .ln{width:1px;height:36px;background:rgba(255,255,255,.5);display:inline-block;position:relative;overflow:hidden}
+.hero-foot .scroll .ln::after{content:"";position:absolute;left:0;top:-100%;width:100%;height:100%;background:var(--red);animation:scrollLine 1.8s ease-in-out infinite}
+@keyframes scrollLine{to{top:100%}}
+@media(max-width:700px){
+  .hero-meta{display:none}
+  .hero{min-height:min(100svh,900px)}
+  .hero-inner{padding-top:110px;padding-bottom:28px;text-align:left}
+  .badge .b-long{display:none}.badge .b-short{display:inline}
+  .hero h1{font-size:clamp(3.6rem,16vw,4.2rem);margin-bottom:.3em}
+  .hero .lead{margin-left:0;font-size:1.02rem}
+  .hero-actions{justify-content:flex-start}
+  .hero-actions .btn{width:100%}
+  .hero-foot{margin-top:26px}
+  .hero-foot .scroll{display:none}
+}
+
+/* ============ MARQUEE ============ */
+.marquee{overflow:hidden;border-top:1px solid var(--line-dark);border-bottom:1px solid var(--line-dark);background:var(--black);padding:22px 0;position:relative}
+.marquee .track{display:flex;width:max-content;gap:0;animation:marquee 38s linear infinite}
+.marquee:hover .track{animation-play-state:paused}
+.marquee .item{display:inline-flex;align-items:center;gap:30px;padding-right:30px;font-family:var(--display);font-size:clamp(1.9rem,3.6vw,3.2rem);color:#fff;letter-spacing:.02em;line-height:1;white-space:nowrap}
+.marquee .item .sq{width:12px;height:12px;background:var(--red);transform:skewX(-20deg);display:inline-block;flex:none}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* ============ SECTIONS ============ */
+.sec{padding:clamp(80px,10vw,150px) 0;position:relative}
+.sec-head{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:end;margin-bottom:clamp(48px,6vw,88px)}
+.sec-head .lead{margin:0}
+@media(max-width:900px){.sec-head{grid-template-columns:1fr;gap:20px}}
+
+/* Dos líneas */
+.lines{display:grid;gap:0}
+.line{display:grid;grid-template-columns:140px 1fr 1fr;gap:clamp(20px,4vw,64px);align-items:center;padding:clamp(40px,5vw,72px) 0;border-top:1px solid var(--line-light)}
+.line:last-child{border-bottom:1px solid var(--line-light)}
+.line .num{font-family:var(--display);font-size:clamp(5rem,10vw,9.5rem);line-height:.8;color:transparent;-webkit-text-stroke:2px var(--red);letter-spacing:.02em}
+.line h3{font-size:clamp(1.7rem,3vw,2.6rem);margin-bottom:16px;letter-spacing:-.02em}
+.line p{max-width:46ch}
+.line .btn{margin-top:8px}
+.line .pic{position:relative;overflow:hidden;border-radius:18px;aspect-ratio:4/3;box-shadow:0 50px 90px -40px rgba(0,0,0,.5)}
+.line .pic img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.line:hover .pic img{transform:scale(1.05)}
+.line .pic .cap{position:absolute;left:14px;bottom:12px;color:#fff;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;background:rgba(0,0,0,.65);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:6px 10px;border-radius:999px}
+.line.rev .pic{order:2}.line.rev .txt{order:3}
+@media(max-width:900px){
+  .line,.line.rev{grid-template-columns:1fr}
+  .line .num{font-size:4.4rem;-webkit-text-stroke:1.5px var(--red)}
+  .line.rev .pic{order:3}.line.rev .txt{order:2}
+  .line .pic{aspect-ratio:3/2}
+}
+
+/* Estructuras (dark) */
+.apps{border-top:1px solid var(--line-dark)}
+.app{display:grid;grid-template-columns:90px 1fr 1.3fr;gap:24px;align-items:baseline;padding:30px 0;border-bottom:1px solid var(--line-dark);transition:padding-left .4s var(--ease)}
+.app:hover{padding-left:12px}
+.app .n{font-family:var(--display);font-size:2rem;color:var(--red);line-height:1}
+.app h3{font-size:clamp(1.3rem,2.2vw,1.9rem);font-weight:700;letter-spacing:-.02em}
+.app p{margin:0;color:var(--steel-light)}
+@media(max-width:800px){.app{grid-template-columns:52px 1fr;gap:10px 16px}.app p{grid-column:2}.app:hover{padding-left:0}}
+
+.scope{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(40px,6vw,100px);margin-top:clamp(70px,8vw,120px);align-items:start}
+.bigfig{display:flex;align-items:baseline;gap:18px;margin-bottom:10px}
+.bigfig .num{font-family:var(--display);font-size:clamp(6rem,14vw,12rem);line-height:.8;color:#fff}
+.bigfig .lab{font-family:var(--display);font-size:clamp(1.8rem,3vw,2.6rem);color:var(--red);line-height:.9}
+.scope-steps{list-style:none;margin:0;padding:0;counter-reset:sc}
+.scope-steps li{position:relative;padding:22px 0 22px 70px;border-top:1px solid var(--line-dark);display:grid;grid-template-columns:1fr auto;align-items:center;gap:16px}
+.scope-steps li:last-child{border-bottom:1px solid var(--line-dark)}
+.scope-steps li::before{counter-increment:sc;content:counter(sc,decimal-leading-zero);position:absolute;left:0;top:22px;font-family:var(--display);font-size:1.6rem;color:var(--red);line-height:1}
+.scope-steps b{font-family:var(--head);font-weight:700;font-size:1.15rem;color:#fff;display:block;letter-spacing:-.01em}
+.scope-steps small{color:var(--steel-light);font-size:.85rem;display:block;margin-top:2px}
+.scope-steps .bar{display:flex;gap:4px}
+.scope-steps .bar span{width:22px;height:6px;background:var(--line-dark);border-radius:3px}
+.scope-steps li:nth-child(1) .bar span:nth-child(-n+1),.scope-steps li:nth-child(2) .bar span:nth-child(-n+2),.scope-steps li:nth-child(3) .bar span:nth-child(-n+3),.scope-steps li:nth-child(4) .bar span:nth-child(-n+4){background:var(--red)}
+.sec-foot{margin:clamp(40px,5vw,64px) 0 0;max-width:70ch}
+@media(max-width:900px){.scope{grid-template-columns:1fr}}
+@media(max-width:700px){.scope-steps li{grid-template-columns:1fr;gap:12px;padding-left:52px}.scope-steps .bar{justify-self:start}}
+
+/* Full-bleed parallax image band */
+.bleed{position:relative;height:clamp(420px,62vh,720px);overflow:hidden;isolation:isolate;display:flex;align-items:flex-end;margin:0}
+.bleed .bg{position:absolute;inset:-12% 0;z-index:-2;will-change:transform}
+.bleed .bg img{width:100%;height:100%;object-fit:cover}
+.bleed::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(0,0,0,.7),rgba(0,0,0,.1) 40%,rgba(0,0,0,.88))}
+.bleed .wrap{width:100%;padding-bottom:clamp(36px,5vw,64px);display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;color:#fff}
+.bleed h2{font-size:clamp(2.6rem,7vw,6.5rem);max-width:12ch;color:#fff}
+.bleed .note{color:rgba(255,255,255,.8)}
+
+/* Minería bento */
+.bento{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:minmax(180px,auto);gap:16px}
+.cell{border-radius:20px;padding:30px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.cell:hover{transform:translateY(-4px);box-shadow:0 30px 60px -30px rgba(0,0,0,.35)}
+.cell h3{font-size:clamp(1.25rem,1.8vw,1.6rem);margin-bottom:10px;letter-spacing:-.02em}
+.cell p{margin:0;font-size:.95rem}
+.cell .k{font-family:var(--display);font-size:1.3rem;color:var(--red);letter-spacing:.04em;margin-bottom:auto;padding-bottom:28px}
+.cell-grey .k,.cell-w .k{color:var(--red-dark)}
+.cell-img{grid-column:span 7;grid-row:span 2;padding:0;min-height:420px;background:#111}
+.cell-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.cell-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.2) 0%,rgba(0,0,0,.3) 40%,rgba(0,0,0,.92) 100%);pointer-events:none}
+.cell-img:hover img{transform:scale(1.04)}
+.cell-img .ov{position:relative;z-index:1;padding:30px;color:#fff;margin-top:auto}
+.cell-img .ov h3{color:#fff;font-size:clamp(1.6rem,2.6vw,2.4rem);text-shadow:0 2px 24px rgba(0,0,0,.5)}
+.cell-img .ov p{color:rgba(255,255,255,.88)}
+.cell-img .ov .note{color:rgba(255,255,255,.8);display:block;margin-top:14px}
+.cell-dark{grid-column:span 5;background:var(--black);color:#fff}
+.cell-dark h3{color:#fff}.cell-dark p{color:#C9CDD2}
+.cell-grey{grid-column:span 5;background:var(--light)}
+.cell-grey p,.cell-w p{color:#3C4047}
+.cell-red{grid-column:span 4;background:var(--red-solid);color:#fff}
+.cell-red h3{color:#fff}.cell-red p{color:#fff}.cell-red .k{color:#fff}
+.cell-w{grid-column:span 4;background:#fff;border:1px solid var(--line-light)}
+.cell-cta{grid-column:span 4;background:var(--ink);color:#fff;justify-content:space-between}
+.cell-cta h3{color:#fff;font-size:1.4rem}.cell-cta p{color:#C9CDD2}
+.cell-cta .btn{align-self:flex-start;margin-top:20px}
+.spec{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.spec span{font-family:var(--head);font-weight:600;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;border:1px solid rgba(255,255,255,.5);border-radius:999px;padding:6px 11px}
+@media(max-width:1000px){.cell-img{grid-column:span 12;grid-row:span 1;min-height:380px}.cell-dark,.cell-grey{grid-column:span 6}.cell-red,.cell-w,.cell-cta{grid-column:span 4}}
+@media(max-width:700px){.bento{grid-template-columns:1fr;grid-auto-rows:auto}.bento>*{grid-column:auto!important}.cell{padding:24px;min-height:0}.cell-img{min-height:340px}.cell-img .ov{padding:24px}}
+.cell-img-sm{grid-column:span 5;grid-row:span 1;min-height:300px}
+.cell-img-sm .ov .k{font-size:1.1rem;margin-bottom:8px;padding-bottom:0;color:#FF5A60;display:block}
+.cell-img-sm .ov h3{font-size:clamp(1.25rem,1.8vw,1.6rem)}
+.cell-img-sm .ov p{font-size:.95rem}
+.cell-img-sm::after{background:linear-gradient(180deg,rgba(0,0,0,.42) 0%,rgba(0,0,0,.55) 45%,rgba(0,0,0,.94) 100%)}
+.cell-img-sm .ov .k,.cell-img-sm .ov h3{text-shadow:0 2px 14px rgba(0,0,0,.85)}
+@media(max-width:1000px){.cell-img-sm{grid-column:span 6;grid-row:span 1;min-height:320px}}
+@media(max-width:700px){.cell-img-sm{min-height:320px}}
+
+/* Proceso (gris claro) */
+.steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line-light)}
+.step3{padding:clamp(28px,3vw,44px) clamp(18px,2.4vw,36px) clamp(34px,3vw,48px) 0;border-right:1px solid var(--line-light);position:relative}
+.step3:nth-child(n+2){padding-left:clamp(18px,2.4vw,36px)}
+.step3:last-child{border-right:0}
+.step3 .n{font-family:var(--display);font-size:clamp(4rem,7vw,6.5rem);line-height:.85;color:var(--black);margin-bottom:22px}
+.step3 .n::after{content:"";display:block;width:40px;height:3px;background:var(--red);margin-top:14px}
+.step3 h3{font-size:1.35rem;margin-bottom:12px;letter-spacing:-.02em}
+.step3 p{margin:0;color:#3C4047}
+.step3 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.step3 .tags span{font-family:var(--head);font-weight:600;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;border:1px solid rgba(0,0,0,.22);border-radius:999px;padding:5px 10px;color:var(--ink);background:#fff}
+@media(max-width:860px){.steps3{grid-template-columns:1fr}.step3,.step3:nth-child(n+2){border-right:0;border-bottom:1px solid var(--line-light);padding-left:0}.step3:last-child{border-bottom:0}}
+.figs{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,3vw,40px);margin-top:clamp(40px,5vw,70px);padding-top:30px;border-top:1px solid var(--line-light)}
+.fig .v{font-family:var(--display);font-size:clamp(2.8rem,5vw,4.6rem);line-height:.9;color:var(--black);white-space:nowrap}
+.fig .v em{font-style:normal;color:var(--red)}
+.fig .l{font-family:var(--head);font-weight:600;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--steel-dark);margin-top:8px}
+@media(max-width:700px){.figs{grid-template-columns:1fr 1fr;gap:28px 16px}}
+
+/* CTA precalificación (negro + glow rojo + chips flotantes) */
+.cta{position:relative;overflow:hidden;isolation:isolate;padding:clamp(110px,15vw,210px) 0;text-align:center;color:#fff;background:var(--black)}
+.cta::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(55% 60% at 50% 60%,rgba(237,28,36,.32),transparent 70%)}
+.cta::after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(40% 40% at 50% 100%,rgba(0,0,0,.8),transparent 70%)}
+.cta h2{font-size:clamp(3.4rem,10vw,9.5rem);color:#fff;margin:18px 0 22px}
+.cta h2 em{font-style:normal;color:var(--red)}
+.cta .lead{margin:0 auto 36px;color:rgba(255,255,255,.86)}
+.cta .meta{color:rgba(255,255,255,.8)}
+.fchip{position:absolute;font-family:var(--head);font-weight:700;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#fff;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.06);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:999px;padding:10px 16px;white-space:nowrap;animation:floaty 7s ease-in-out infinite alternate;box-shadow:0 30px 60px -30px rgba(0,0,0,.8)}
+.fchip .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--red);margin-right:8px;vertical-align:middle}
+.fchip.c1{left:8%;top:22%;transform:rotate(-6deg)}
+.fchip.c2{right:9%;top:30%;transform:rotate(5deg);animation-delay:-2.5s}
+.fchip.c3{left:14%;bottom:20%;transform:rotate(4deg);animation-delay:-4s}
+.fchip.c4{right:13%;bottom:16%;transform:rotate(-5deg);animation-delay:-1.2s}
+@keyframes floaty{from{margin-top:0}to{margin-top:-18px}}
+@media(max-width:900px){.fchip{display:none}.cta{padding:clamp(90px,16vw,140px) 0}}
+
+/* Forms */
+.form-split{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(36px,6vw,90px);align-items:start}
+@media(max-width:960px){.form-split{grid-template-columns:1fr;gap:34px}}
+.form{display:grid;gap:18px}
+.form .row{display:grid;gap:18px;grid-template-columns:1fr 1fr}
+@media(max-width:640px){.form .row{grid-template-columns:1fr}}
+.panel{background:#fff;border-radius:24px;padding:clamp(22px,3vw,40px);box-shadow:0 60px 120px -50px rgba(0,0,0,.45),0 24px 48px -30px rgba(0,0,0,.18)}
+.light-sec .panel{border:1px solid var(--line-light);box-shadow:0 40px 80px -50px rgba(0,0,0,.25)}
+label{display:block;font-family:var(--head);font-weight:600;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);margin-bottom:8px}
+input[type=text],input[type=email],input[type=tel],select,textarea{width:100%;font:inherit;font-size:1rem;padding:14px 16px;border:1px solid #CFD3D8;border-radius:12px;background:#fff;color:var(--ink);transition:border-color .2s,box-shadow .2s}
+input::placeholder,textarea::placeholder{color:#6B7178}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--black);box-shadow:0 0 0 4px rgba(0,0,0,.06)}
+textarea{min-height:110px;resize:vertical}
+select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23111' stroke-width='2.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:42px}
+.form .btn{justify-self:start}
+.alert{padding:14px 16px;border-radius:12px;font-size:.93rem;background:var(--light);border-left:4px solid var(--red);margin:0}
+[data-msg]:empty{display:none}
+.checklist{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:14px}
+.checklist li{display:grid;grid-template-columns:28px 1fr;gap:12px;align-items:start}
+.checklist .ck{width:28px;height:28px;border-radius:50%;background:var(--red-solid);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-family:var(--display);font-size:.95rem;flex:none;margin-top:2px}
+.checklist b{font-family:var(--head);font-weight:700;display:block}
+.checklist span.d{font-size:.92rem;color:var(--steel-dark)}
+.form-side .note{display:block;margin-top:22px}
+@media(max-width:960px){
+  .checklist{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+  .checklist li{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line-light);border-radius:999px;padding:6px 12px 6px 6px}
+  .checklist .ck{width:22px;height:22px;font-size:.8rem;margin:0}
+  .checklist b{font-size:.8rem;letter-spacing:.02em}
+  .checklist span.d{display:none}
+  .form-side .note{display:none}
+}
+
+/* Contacto */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,90px);align-items:start}
+@media(max-width:960px){.contact{grid-template-columns:1fr}}
+.cinfo{display:grid;gap:0;margin-top:34px;border-top:1px solid var(--line-light)}
+.cinfo div{padding:22px 0;border-bottom:1px solid var(--line-light);display:grid;grid-template-columns:120px 1fr;gap:16px;align-items:baseline}
+.cinfo .k{font-family:var(--head);font-weight:700;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--red-dark)}
+.cinfo a{text-decoration:none;font-weight:600;color:var(--black)}
+.cinfo a:hover{color:var(--red-dark)}
+.cinfo p{margin:0}
+.cinfo small{display:block;color:var(--steel-dark);font-size:.85rem;margin-top:4px}
+@media(max-width:520px){.cinfo div{grid-template-columns:1fr;gap:4px}}
+
+/* Footer */
+.site-footer{background:var(--black);color:var(--steel-light);padding:clamp(60px,8vw,100px) 0 30px;border-top:1px solid var(--line-dark);position:relative;overflow:hidden}
+.site-footer .big{font-family:var(--display);font-size:clamp(3.6rem,13vw,13rem);line-height:.82;color:#fff;letter-spacing:.01em;margin:0 0 clamp(36px,5vw,70px);display:flex;flex-wrap:wrap;gap:0 .25em}
+.site-footer .big em{font-style:normal;color:var(--red)}
+.site-footer .top{display:grid;grid-template-columns:1.2fr .8fr .8fr .9fr;gap:30px;padding-bottom:40px;border-bottom:1px solid var(--line-dark)}
+.site-footer img{height:46px;width:auto}
+.site-footer .top p{color:var(--steel-light);max-width:36ch;font-size:.92rem}
+.site-footer h3{font-family:var(--head);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:#fff;margin-bottom:14px}
+.site-footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.site-footer a{text-decoration:none;color:#D6D9DD}
+.site-footer a:hover{color:var(--red)}
+.site-footer .bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-top:20px;font-size:.78rem;color:var(--steel-note)}
+@media(max-width:900px){.site-footer .top{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.site-footer .top{grid-template-columns:1fr}}
+
+/* ============ REVEAL (solo con JS) ============ */
+.js .reveal{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.js .reveal.in{opacity:1;transform:none}
+.js .reveal[data-d="1"]{transition-delay:.1s}.js .reveal[data-d="2"]{transition-delay:.2s}.js .reveal[data-d="3"]{transition-delay:.3s}.js .reveal[data-d="4"]{transition-delay:.4s}
+.js .hero .rise{transform:translateY(26px);animation:rise .9s var(--ease) forwards}
+.js .hero .rise:nth-child(1){animation-delay:.05s}.js .hero .rise:nth-child(2){animation-delay:.15s}.js .hero .rise:nth-child(3){animation-delay:.28s}.js .hero .rise:nth-child(4){animation-delay:.4s}
+@keyframes rise{to{transform:none}}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .reveal,.js .hero .rise{opacity:1;transform:none}
+  .hero-bg,.bleed .bg{transform:none!important}
+}
+</style>
 </head>
 <body>
-<header class="site-header"><div class="container">
-  <a class="logo" href="/"><img src="/assets/img/logo-igs.png" alt="IGS Group USA"></a>
-  <button class="nav-toggle" aria-label="Menú"><span></span><span></span><span></span></button>
-  <nav class="nav">
-    <a href="#estructuras">Estructuras</a><a href="#suministros">Suministros</a><a href="#proceso">Cómo trabajamos</a><a href="#contacto">Contacto</a>
-    <a class="lang" href="/en/" hreflang="en">EN</a>
-    <a class="btn btn-sm" href="/precalificar/">Precalificar nave</a>
-  </nav>
-</div></header>
+<a class="skip" href="#main">Saltar al contenido</a>
 
-<section class="hero"><div class="container">
-  <div>
-    <p class="eyebrow">Estructuras metálicas y suministros industriales</p>
-    <h1>Soluciones en acero para desarrollar proyectos y abastecer operaciones.</h1>
-    <p class="lead">Suministramos estructuras metálicas, componentes y materiales especializados para empresas que desarrollan instalaciones o necesitan abastecer su actividad industrial en República Dominicana.</p>
-    <div class="actions"><a class="btn" href="/precalificar/">Precalificar mi nave</a><a class="btn btn-outline" href="#suministros">Solicitar suministros</a></div>
-    <div class="tags"><span>Industria</span><span>Construcción</span><span>Minería</span></div>
+<header class="site-header" id="top" data-theme="dark">
+  <div class="wrap bar">
+    <a class="logo" href="/" aria-label="IGS Group USA — inicio">
+      <img class="lg-white" src="/assets/img/logo-igs-white.png" alt="IGS Group USA" width="640" height="349">
+      <img class="lg-dark" src="/assets/img/logo-igs.png" alt="IGS Group USA" width="640" height="349">
+    </a>
+    <button class="nav-toggle" aria-label="Menú" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav class="nav" id="menu" aria-label="Principal">
+      <a href="#estructuras">Estructuras</a>
+      <a href="#mineria">Suministros</a>
+      <a href="#proceso">Cómo trabajamos</a>
+      <a href="#contacto">Contacto</a>
+      <a class="lang" href="/en/" hreflang="en" lang="en">EN</a>
+      <a class="btn btn-red" href="/precalificar/">Precalificar mi nave</a>
+    </nav>
   </div>
-  <div class="hero-media"><img src="/assets/img/nave-exterior.jpg" alt="Edificio industrial de acero" width="1536" height="1024" fetchpriority="high"><p class="caption">Imagen conceptual. Las configuraciones se definen para cada proyecto.</p></div>
-</div></section>
+</header>
 
-<section class="sec-line tight" id="oferta"><div class="container">
-  <p class="eyebrow">IGS Group USA</p>
-  <h2>Una oferta que integra proyecto y operación.</h2>
-  <div class="grid g2" style="margin-top:28px">
-    <div class="card light"><div class="num">01</div><h3>Soluciones estructurales</h3><p>Edificaciones y conjuntos de acero para usos industriales, logísticos, comerciales y otras aplicaciones definidas por proyecto.</p><a class="btn btn-sm btn-outline" href="/precalificar/">Precalificar nave</a></div>
-    <div class="card light"><div class="num">02</div><h3>Suministros industriales</h3><p>Medios de molienda, materiales para minería, tuberías especializadas y consumibles conforme a las especificaciones de cada operación.</p><a class="btn btn-sm btn-outline" href="#suministros">Solicitar cotización</a></div>
+<main id="main">
+<!-- ============ HERO ============ -->
+<section class="hero" aria-labelledby="h1" data-theme="dark">
+  <div class="hero-bg" data-parallax="0.22"><img src="/assets/img/nave-exterior.jpg" srcset="/assets/img/nave-exterior-800.jpg 800w, /assets/img/nave-exterior.jpg 1536w" sizes="100vw" alt="Edificio industrial de acero y vidrio al atardecer (imagen conceptual)" width="1536" height="1024" fetchpriority="high"></div>
+  <div class="hero-meta" aria-hidden="true">
+    <span class="meta"><span class="dot"></span>Industria · Construcción · Minería</span>
+    <span class="meta">10115 Costa del Sol Blvd &nbsp;·&nbsp; Doral, FL 33178</span>
   </div>
-  <p class="muted" style="margin-top:22px">Una propuesta que define componentes, cantidades, condiciones y entrega, con atención comercial directa de IGS.</p>
-</div></section>
-
-<section class="sec-line" id="estructuras"><div class="container">
-  <p class="eyebrow">Aplicaciones estructurales</p>
-  <h2>Más posibilidades para construir en acero.</h2>
-  <p class="lead">La configuración estructural responde al uso del espacio, las dimensiones y los requerimientos de cada proyecto.</p>
-  <div class="grid g4" style="margin-top:28px">
-    <div class="card"><div class="num">01</div><h3>Industria y logística</h3><p>Naves de producción, almacenes, centros de distribución, talleres y parques industriales.</p></div>
-    <div class="card"><div class="num">02</div><h3>Comercio y servicios</h3><p>Salas de exhibición, edificios comerciales, oficinas y espacios de atención al público.</p></div>
-    <div class="card"><div class="num">03</div><h3>Espacios de gran cobertura</h3><p>Recintos deportivos, centros de eventos, cubiertas y hangares, según requerimientos de luz y altura.</p></div>
-    <div class="card"><div class="num">04</div><h3>Estructuras especiales</h3><p>Pasarelas, soportes de tuberías y estructuras para proyectos de energía, sujetas a evaluación técnica.</p></div>
-  </div>
-  <p class="muted small" style="margin-top:18px">Cada aplicación se desarrolla conforme a las especificaciones, cargas y alcance definidos para el suministro.</p>
-</div></section>
-
-<section class="sec-line" id="sistema"><div class="container split">
-  <div>
-    <p class="eyebrow">Componentes y configuración</p>
-    <h2>El sistema completo. El alcance que necesita.</h2>
-    <ul class="list" style="margin:18px 0 24px">
-      <li><strong>Estructura.</strong> Columnas, vigas, pórticos, cerchas, correas y arriostramientos.</li>
-      <li><strong>Envolvente.</strong> Cubiertas, cerramientos, aislamiento y terminaciones.</li>
-      <li><strong>Complementos.</strong> Escaleras, plataformas, accesos y componentes según diseño.</li>
-    </ul>
-    <h3>Desde componentes hasta un suministro integrado</h3>
-    <p>Solo estructura, estructura con cubierta o una solución que incorpore cerramientos y complementos. Definimos qué incluye cada propuesta para facilitar la planificación del proyecto.</p>
-    <p class="muted small">Para alcance llave en mano, la obra civil, el montaje y las instalaciones se detallan expresamente en la propuesta.</p>
-  </div>
-  <div><img src="/assets/img/nave-interior.jpg" alt="Interior de nave de acero" loading="lazy" width="1536" height="1024"><p class="caption">Imagen conceptual.</p></div>
-</div></section>
-
-<section class="band" id="mineria"><div class="container">
-  <div class="split" style="align-items:start">
-    <div>
-      <p class="eyebrow">Minería y suministro industrial</p>
-      <h2>Materiales para su operación industrial.</h2>
-      <p>Iniciamos con la familia de producto pertinente para cada operación. Cada propuesta se prepara con la especificación, la cantidad, la aplicación y el destino de entrega.</p>
-      <p><span class="pill" style="background:#1a1a1a;border-color:#333;color:#ddd">Especificación · Cantidad · Aplicación · Destino</span></p>
-      <a class="btn" href="#suministros" style="margin-top:8px">Solicitar cotización de suministros</a>
+  <div class="hero-inner">
+    <div class="rise"><span class="badge"><span class="dot" aria-hidden="true"></span><span class="b-long">Estructuras metálicas y suministros industriales</span><span class="b-short">Estructuras · Suministros</span></span></div>
+    <h1 id="h1" class="display rise"><span>Acero para proyectos</span><span>y <span class="accent">operaciones.</span></span></h1>
+    <p class="lead rise">Suministramos estructuras metálicas, componentes y materiales especializados para empresas que desarrollan instalaciones o abastecen su actividad industrial.</p>
+    <div class="hero-actions rise">
+      <a class="btn btn-red" href="/precalificar/">Precalificar mi nave <span class="arr" aria-hidden="true">→</span></a>
+      <a class="btn btn-ghost" href="#suministros">Solicitar suministros</a>
     </div>
-    <div class="grid" style="gap:14px">
-      <div class="card" style="background:#111;border-color:#2a2a2a"><h3 style="color:#fff">Medios de molienda</h3><p>Bolas forjadas o laminadas, bolas fundidas aleadas con cromo, barras y cilindros de molienda.</p></div>
-      <div class="card" style="background:#111;border-color:#2a2a2a"><h3 style="color:#fff">Materiales para minería</h3><p>Malla galvanizada, fibra de acero y pernos expansivos según el requerimiento.</p></div>
-      <div class="card" style="background:#111;border-color:#2a2a2a"><h3 style="color:#fff">Tuberías y consumibles</h3><p>Tuberías especializadas y otros materiales industriales, con especificaciones y cantidades definidas.</p></div>
+    <div class="hero-foot">
+      <span class="note">Imagen conceptual. Las configuraciones se definen para cada proyecto.</span>
+      <span class="scroll" aria-hidden="true">Desplazar <span class="ln"></span></span>
     </div>
   </div>
-</div></section>
+</section>
 
-<section class="sec-line" id="proceso"><div class="container">
-  <p class="eyebrow">Cómo trabajamos</p>
-  <h2>De la necesidad a la propuesta, con datos claros.</h2>
-  <div class="grid g3 steps" style="margin-top:28px">
-    <div class="step"><h3>Cuéntenos su proyecto</h3><p>Complete la ficha de precalificación en línea en unos cinco minutos. Si un dato aún no está disponible, márquelo «por definir».</p></div>
-    <div class="step"><h3>Clasificación y referencia</h3><p>Su nave se clasifica como Esencial, Industrial o Especializada y recibe un resumen en PDF. En los casos sencillos incluye un estimado referencial por m².</p></div>
-    <div class="step"><h3>Propuesta a la medida</h3><p>IGS revisa el alcance con usted y prepara una propuesta que define componentes, cantidades, condiciones y entrega.</p></div>
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true" data-theme="dark">
+  <div class="track">
+    <span class="item">Estructuras metálicas <span class="sq"></span></span><span class="item">Medios de molienda <span class="sq"></span></span><span class="item">Malla galvanizada <span class="sq"></span></span><span class="item">Fibra de acero <span class="sq"></span></span><span class="item">Pernos expansivos <span class="sq"></span></span><span class="item">Tuberías especializadas <span class="sq"></span></span><span class="item">Cubiertas y cerramientos <span class="sq"></span></span>
+    <span class="item">Estructuras metálicas <span class="sq"></span></span><span class="item">Medios de molienda <span class="sq"></span></span><span class="item">Malla galvanizada <span class="sq"></span></span><span class="item">Fibra de acero <span class="sq"></span></span><span class="item">Pernos expansivos <span class="sq"></span></span><span class="item">Tuberías especializadas <span class="sq"></span></span><span class="item">Cubiertas y cerramientos <span class="sq"></span></span>
   </div>
-  <div class="cta-box" style="margin-top:40px">
-    <div><h2>Precalifique su nave en línea</h2><p>Uso, dimensiones, altura, alcance y condición comercial. Sin compromiso y con respuesta inmediata.</p></div>
-    <a class="btn" href="/precalificar/">Comenzar la ficha</a>
-  </div>
-</div></section>
+</div>
 
-<section class="sec-line" id="suministros"><div class="container">
-  <div class="split" style="align-items:start">
-    <div>
-      <p class="eyebrow">Suministros industriales</p>
-      <h2>Solicitar cotización de suministros</h2>
-      <p class="lead">Envíe la especificación, la cantidad requerida y el destino de entrega para preparar su propuesta.</p>
-      <img src="/assets/img/suministros-800.jpg" alt="Medios de molienda y perfiles de acero" loading="lazy" style="border-radius:6px;margin-top:10px"><p class="caption">Imagen conceptual.</p>
+<!-- ============ DOS LÍNEAS ============ -->
+<section class="sec light-sec" id="oferta" aria-labelledby="t-oferta" data-theme="light">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal">
+        <p class="meta eyebrow"><span>Sección 01 — IGS Group USA</span></p>
+        <h2 id="t-oferta" class="h-xl">Una oferta que integra proyecto y operación.</h2>
+      </div>
+      <p class="lead muted reveal" data-d="1">Dos líneas de negocio con el mismo peso. Una propuesta que define componentes, cantidades, condiciones y entrega, con atención comercial directa de IGS.</p>
     </div>
-    <form class="form panel" data-form="suministros">
+
+    <div class="lines">
+      <article class="line reveal">
+        <div class="num" aria-hidden="true">01</div>
+        <div class="txt">
+          <h3>Soluciones estructurales</h3>
+          <p>Edificaciones y conjuntos de acero para usos industriales, logísticos, comerciales y otras aplicaciones definidas por proyecto.</p>
+          <a class="btn btn-dark" href="/precalificar/">Precalificar nave <span class="arr" aria-hidden="true">→</span></a>
+        </div>
+        <div class="pic"><img src="/assets/img/nave-exterior-800.jpg" srcset="/assets/img/nave-exterior-800.jpg 800w, /assets/img/nave-exterior.jpg 1536w" sizes="(max-width:900px) 100vw, 45vw" alt="Edificio industrial de acero (imagen conceptual)" width="800" height="533" loading="lazy"><span class="cap">Imagen conceptual</span></div>
+      </article>
+      <article class="line rev reveal">
+        <div class="num" aria-hidden="true">02</div>
+        <div class="txt">
+          <h3>Suministros industriales</h3>
+          <p>Medios de molienda, materiales para minería, tuberías especializadas y consumibles conforme a las especificaciones de cada operación.</p>
+          <a class="btn btn-outline-dark" href="#suministros">Solicitar cotización <span class="arr" aria-hidden="true">→</span></a>
+        </div>
+        <div class="pic"><img src="/assets/img/suministros-800.jpg" srcset="/assets/img/suministros-800.jpg 800w, /assets/img/suministros.jpg 1536w" sizes="(max-width:900px) 100vw, 45vw" alt="Medios de molienda y perfiles de acero (imagen conceptual)" width="800" height="533" loading="lazy"><span class="cap">Imagen conceptual</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ESTRUCTURAS ============ -->
+<section class="sec dark" id="estructuras" aria-labelledby="t-estructuras" data-theme="dark">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal">
+        <p class="meta eyebrow"><span>Sección 02 — Aplicaciones estructurales</span></p>
+        <h2 id="t-estructuras" class="h-xl">Más posibilidades para construir en acero.</h2>
+      </div>
+      <p class="lead muted reveal" data-d="1">La configuración estructural responde al uso del espacio, las dimensiones y los requerimientos de cada proyecto.</p>
+    </div>
+
+    <div class="apps">
+      <article class="app reveal"><span class="n" aria-hidden="true">01</span><h3>Industria y logística</h3><p>Naves de producción, almacenes, centros de distribución, talleres y parques industriales.</p></article>
+      <article class="app reveal" data-d="1"><span class="n" aria-hidden="true">02</span><h3>Comercio y servicios</h3><p>Salas de exhibición, edificios comerciales, oficinas y espacios de atención al público.</p></article>
+      <article class="app reveal" data-d="2"><span class="n" aria-hidden="true">03</span><h3>Espacios de gran cobertura</h3><p>Recintos deportivos, centros de eventos, cubiertas y hangares, según requerimientos de luz y altura.</p></article>
+      <article class="app reveal" data-d="3"><span class="n" aria-hidden="true">04</span><h3>Estructuras especiales</h3><p>Pasarelas, soportes de tuberías y estructuras para proyectos de energía, sujetas a evaluación técnica.</p></article>
+    </div>
+
+    <div class="scope">
+      <div class="reveal">
+        <div class="bigfig"><span class="num">4</span><span class="lab">alcances<br>de suministro</span></div>
+        <h3 class="h-lg" style="margin:10px 0 14px">El sistema completo.<br>El alcance que necesita.</h3>
+        <p class="muted">Solo estructura, estructura con cubierta o una solución que incorpore cerramientos y complementos. Definimos qué incluye cada propuesta para facilitar la planificación del proyecto.</p>
+        <p class="note">Para alcance llave en mano, la obra civil, el montaje y las instalaciones se detallan expresamente en la propuesta.</p>
+      </div>
+      <div class="reveal" data-d="1">
+        <ol class="scope-steps">
+          <li><div><b>Solo estructura</b><small>Columnas, vigas, pórticos, cerchas, correas y arriostramientos.</small></div><span class="bar" aria-hidden="true"><span></span><span></span><span></span><span></span></span></li>
+          <li><div><b>Estructura + cubierta</b><small>Añade la cubierta y sus terminaciones.</small></div><span class="bar" aria-hidden="true"><span></span><span></span><span></span><span></span></span></li>
+          <li><div><b>Estructura + cubierta + cerramientos</b><small>Incorpora cerramientos y aislamiento.</small></div><span class="bar" aria-hidden="true"><span></span><span></span><span></span><span></span></span></li>
+          <li><div><b>Nave completa</b><small>Envolvente y complementos: escaleras, plataformas y accesos según diseño.</small></div><span class="bar" aria-hidden="true"><span></span><span></span><span></span><span></span></span></li>
+        </ol>
+      </div>
+    </div>
+    <p class="note sec-foot">Cada aplicación se desarrolla conforme a las especificaciones, cargas y alcance definidos para el suministro.</p>
+  </div>
+</section>
+
+<div class="bleed" data-theme="dark">
+  <div class="bg" data-parallax="0.18"><img src="/assets/img/nave-interior.jpg" srcset="/assets/img/nave-interior-800.jpg 800w, /assets/img/nave-interior.jpg 1536w" sizes="100vw" alt="Interior de nave de acero (imagen conceptual)" width="1536" height="1024" loading="lazy"></div>
+  <div class="wrap">
+    <h2 class="display reveal">Desde componentes hasta un suministro integrado.</h2>
+    <span class="note reveal" data-d="1">Imagen conceptual · Nave de acero</span>
+  </div>
+</div>
+
+<!-- ============ MINERÍA Y SUMINISTROS ============ -->
+<section class="sec light-sec" id="mineria" aria-labelledby="t-mineria" data-theme="light">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal">
+        <p class="meta eyebrow"><span>Sección 03 — Minería y suministro industrial</span></p>
+        <h2 id="t-mineria" class="h-xl">Materiales para su operación industrial.</h2>
+      </div>
+      <p class="lead muted reveal" data-d="1">Iniciamos con la familia de producto pertinente para cada operación. Cada propuesta se prepara con la especificación, la cantidad, la aplicación y el destino de entrega.</p>
+    </div>
+
+    <div class="bento">
+      <div class="cell cell-img reveal">
+        <img src="/assets/img/suministros.jpg" srcset="/assets/img/suministros-800.jpg 800w, /assets/img/suministros.jpg 1536w" sizes="(max-width:1000px) 100vw, 60vw" alt="Bolas de molienda y perfiles de acero (imagen conceptual)" width="1536" height="1024" loading="lazy">
+        <div class="ov"><h3>Suministro con especificación clara.</h3><p>Familias de producto para minería e industria, preparadas según su requerimiento.</p><span class="note">Imagen conceptual</span></div>
+      </div>
+      <div class="cell cell-dark reveal" data-d="1"><span class="k">01 / Molienda</span><h3>Medios de molienda</h3><p>Bolas forjadas o laminadas, bolas fundidas aleadas con cromo, barras y cilindros de molienda.</p></div>
+      <div class="cell cell-img cell-img-sm reveal" data-d="2">
+        <img src="/assets/img/malla-minera-800.jpg" srcset="/assets/img/malla-minera-800.jpg 800w, /assets/img/malla-minera.jpg 1536w" sizes="(max-width:1000px) 100vw, 40vw" alt="Malla galvanizada expandida en una operación minera (imagen conceptual)" width="1536" height="1024" loading="lazy">
+        <div class="ov"><span class="k">02 / Minería</span><h3>Materiales para minería</h3><p>Malla galvanizada, fibra de acero y pernos expansivos según el requerimiento.</p><span class="note">Imagen conceptual</span></div>
+      </div>
+      <div class="cell cell-w reveal" data-d="1"><span class="k">03 / Industria</span><h3>Tuberías y consumibles</h3><p>Tuberías especializadas y otros materiales industriales, con especificaciones y cantidades definidas.</p></div>
+      <div class="cell cell-red reveal" data-d="2"><span class="k">Cada propuesta incluye</span><h3>Lo que necesitamos de usted</h3><div class="spec"><span>Especificación</span><span>Cantidad</span><span>Aplicación</span><span>Destino</span></div></div>
+      <div class="cell cell-cta reveal" data-d="3"><h3>Solicitar cotización de suministros</h3><p>Envíe la especificación, la cantidad y el destino de entrega.</p><a class="btn btn-white" href="#suministros">Ir al formulario <span class="arr" aria-hidden="true">→</span></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CÓMO TRABAJAMOS ============ -->
+<section class="sec grey-sec" id="proceso" aria-labelledby="t-proceso" data-theme="light">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal">
+        <p class="meta eyebrow"><span>Sección 04 — Cómo trabajamos</span></p>
+        <h2 id="t-proceso" class="h-xl">De la necesidad a la propuesta, con datos claros.</h2>
+      </div>
+      <p class="lead muted reveal" data-d="1">Tres pasos. Sin compromiso y con respuesta inmediata en la ficha en línea.</p>
+    </div>
+
+    <div class="steps3">
+      <article class="step3 reveal"><div class="n" aria-hidden="true">01</div><h3>Cuéntenos su proyecto</h3><p>Complete la ficha de precalificación en línea en unos cinco minutos. Si un dato aún no está disponible, márquelo «por definir».</p><div class="tags"><span>Ficha en línea</span><span>5 min</span></div></article>
+      <article class="step3 reveal" data-d="1"><div class="n" aria-hidden="true">02</div><h3>Clasificación y referencia</h3><p>Su nave se clasifica como Esencial, Industrial o Especializada y recibe un resumen en PDF. En los casos sencillos incluye un estimado referencial por m².</p><div class="tags"><span>Esencial</span><span>Industrial</span><span>Especializada</span><span>PDF</span></div></article>
+      <article class="step3 reveal" data-d="2"><div class="n" aria-hidden="true">03</div><h3>Propuesta a la medida</h3><p>IGS revisa el alcance con usted y prepara una propuesta que define componentes, cantidades, condiciones y entrega.</p><div class="tags"><span>Componentes</span><span>Cantidades</span><span>Condiciones</span><span>Entrega</span></div></article>
+    </div>
+
+    <div class="figs">
+      <div class="fig reveal"><div class="v">5<em>&thinsp;min</em></div><div class="l">Ficha en línea</div></div>
+      <div class="fig reveal" data-d="1"><div class="v">PDF</div><div class="l">Resumen inmediato</div></div>
+      <div class="fig reveal" data-d="2"><div class="v">2</div><div class="l">Líneas de negocio</div></div>
+      <div class="fig reveal" data-d="3"><div class="v">Doral<em>,</em> FL</div><div class="l">Oficina en Estados Unidos</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA PRECALIFICACIÓN ============ -->
+<section class="cta" aria-labelledby="t-cta" data-theme="dark">
+  <span class="fchip c1" aria-hidden="true"><span class="dot"></span>Esencial</span>
+  <span class="fchip c2" aria-hidden="true"><span class="dot"></span>Industrial</span>
+  <span class="fchip c3" aria-hidden="true"><span class="dot"></span>Especializada</span>
+  <span class="fchip c4" aria-hidden="true"><span class="dot"></span>Resumen en PDF</span>
+  <div class="wrap">
+    <p class="meta reveal">Sin compromiso · Respuesta inmediata</p>
+    <h2 id="t-cta" class="display reveal" data-d="1">Precalifique<br>su nave <em>en línea.</em></h2>
+    <p class="lead reveal" data-d="2">Uso, dimensiones, altura, alcance y condición comercial. Su nave se clasifica y recibe un resumen en PDF.</p>
+    <div class="reveal" data-d="3"><a class="btn btn-red" href="/precalificar/">Comenzar la ficha <span class="arr" aria-hidden="true">→</span></a></div>
+  </div>
+</section>
+
+<!-- ============ FORMULARIO SUMINISTROS ============ -->
+<section class="sec grey-sec" id="suministros" aria-labelledby="t-sum" data-theme="light">
+  <div class="wrap form-split">
+    <div class="reveal form-side">
+      <p class="meta eyebrow"><span>Sección 05 — Suministros industriales</span></p>
+      <h2 id="t-sum" class="h-lg">Solicitar cotización de suministros</h2>
+      <p class="lead muted" style="margin-top:16px">Envíe la especificación, la cantidad requerida y el destino de entrega para preparar su propuesta.</p>
+      <ul class="checklist">
+        <li><span class="ck" aria-hidden="true">1</span><div><b>Especificación</b><span class="d">Norma, ficha técnica o descripción del material.</span></div></li>
+        <li><span class="ck" aria-hidden="true">2</span><div><b>Cantidad y fecha</b><span class="d">Unidad de medida y fecha requerida.</span></div></li>
+        <li><span class="ck" aria-hidden="true">3</span><div><b>Aplicación y destino</b><span class="d">Uso previsto y lugar de entrega.</span></div></li>
+      </ul>
+      <span class="note">Medios de molienda · Malla galvanizada · Fibra de acero · Pernos expansivos · Tuberías especializadas</span>
+    </div>
+    <form class="form panel reveal" data-form="suministros" data-d="1">
       <div class="row"><div><label for="s_nombre">Nombre</label><input id="s_nombre" name="nombre" type="text" required autocomplete="name"></div><div><label for="s_empresa">Empresa</label><input id="s_empresa" name="empresa" type="text" autocomplete="organization"></div></div>
       <div class="row"><div><label for="s_tel">Teléfono o WhatsApp</label><input id="s_tel" name="telefono" type="tel" autocomplete="tel"></div><div><label for="s_mail">Correo</label><input id="s_mail" name="correo" type="email" autocomplete="email"></div></div>
       <div><label for="s_prod">Producto o familia</label><select id="s_prod" name="producto"><option value="">Seleccione</option><option>Medios de molienda</option><option>Malla galvanizada</option><option>Fibra de acero</option><option>Pernos expansivos</option><option>Tuberías especializadas</option><option>Otro material industrial</option></select></div>
@@ -129,42 +605,90 @@
       <div><label for="s_msg">Aplicación y detalles</label><textarea id="s_msg" name="aplicacion"></textarea></div>
       <input type="text" name="website" class="sr" tabindex="-1" autocomplete="off">
       <p data-msg></p>
-      <button class="btn" type="submit">Enviar solicitud</button>
+      <button class="btn btn-red" type="submit">Enviar solicitud <span class="arr" aria-hidden="true">→</span></button>
     </form>
   </div>
-</div></section>
+</section>
 
-<section class="sec-line" id="contacto"><div class="container">
-  <p class="eyebrow">Contacto</p>
-  <h2>Conversemos sobre su próximo proyecto.</h2>
-  <p class="lead">Una nueva instalación. Una ampliación. Un requerimiento de suministro.</p>
-  <div class="grid g3" style="margin-top:28px">
-    <div class="card light"><h3>Correo</h3><p><a data-email href="#"></a></p><p class="muted small">Para estructuras: comparta el uso, la ubicación, las dimensiones y los planos disponibles. Para materiales: la especificación, la cantidad y el destino.</p></div>
-    <div class="card light"><h3>WhatsApp</h3><p><a data-wa href="#">Escribir por WhatsApp</a><span data-wa-alt>Próximamente. Mientras tanto, escríbanos por correo o use la ficha en línea.</span></p></div>
-    <div class="card light"><h3>IGS Group USA, Corp.</h3><p>10115 Costa del Sol Blvd<br>Doral, FL 33178, Estados Unidos</p><p class="muted small">Atención comercial directa en República Dominicana.</p></div>
-  </div>
-  <form class="form panel" data-form="contacto" style="margin-top:28px;max-width:760px">
-    <div class="row"><div><label for="c_nombre">Nombre</label><input id="c_nombre" name="nombre" type="text" required autocomplete="name"></div><div><label for="c_empresa">Empresa</label><input id="c_empresa" name="empresa" type="text"></div></div>
-    <div class="row"><div><label for="c_tel">Teléfono o WhatsApp</label><input id="c_tel" name="telefono" type="tel"></div><div><label for="c_mail">Correo</label><input id="c_mail" name="correo" type="email"></div></div>
-    <div><label for="c_msg">Mensaje</label><textarea id="c_msg" name="mensaje" required></textarea></div>
-    <input type="text" name="website" class="sr" tabindex="-1" autocomplete="off">
-    <p data-msg></p>
-    <button class="btn" type="submit">Enviar mensaje</button>
-  </form>
-</div></section>
-
-<footer class="site-footer"><div class="container">
-  <div class="top">
-    <div><img src="/assets/img/logo-igs.png" alt="IGS Group USA"><p style="margin-top:12px;max-width:40ch">Estructuras metálicas y suministros industriales para proyectos y operaciones en República Dominicana.</p></div>
-    <div class="cols">
-      <div><strong style="color:#000">Secciones</strong><br><a href="#estructuras">Estructuras</a><br><a href="#mineria">Minería y suministros</a><br><a href="#proceso">Cómo trabajamos</a><br><a href="/precalificar/">Precalificar nave</a></div>
-      <div><strong style="color:#000">Contacto</strong><br><a data-email href="#"></a><br><a data-wa href="#">WhatsApp</a><br>10115 Costa del Sol Blvd, Doral, FL 33178<br><a href="/en/">English</a></div>
+<!-- ============ CONTACTO ============ -->
+<section class="sec light-sec" id="contacto" aria-labelledby="t-contacto" data-theme="light">
+  <div class="wrap contact">
+    <div class="reveal">
+      <p class="meta eyebrow"><span>Sección 06 — Contacto</span></p>
+      <h2 id="t-contacto" class="h-xl">Conversemos sobre su próximo proyecto.</h2>
+      <p class="lead muted" style="margin-top:16px">Una nueva instalación. Una ampliación. Un requerimiento de suministro.</p>
+      <div class="cinfo">
+        <div><span class="k">Correo</span><p><a data-email href="#"></a><small>Para estructuras: comparta el uso, la ubicación, las dimensiones y los planos disponibles. Para materiales: la especificación, la cantidad y el destino.</small></p></div>
+        <div><span class="k">WhatsApp</span><p><a data-wa href="#">Escribir por WhatsApp</a><span data-wa-alt>Próximamente. Mientras tanto, escríbanos por correo o use la ficha en línea.</span></p></div>
+        <div><span class="k">Oficina</span><p>IGS Group USA, Corp.<br>10115 Costa del Sol Blvd<br>Doral, FL 33178, Estados Unidos</p></div>
+      </div>
     </div>
+    <form class="form panel reveal" data-form="contacto" data-d="1">
+      <div class="row"><div><label for="c_nombre">Nombre</label><input id="c_nombre" name="nombre" type="text" required autocomplete="name"></div><div><label for="c_empresa">Empresa</label><input id="c_empresa" name="empresa" type="text"></div></div>
+      <div class="row"><div><label for="c_tel">Teléfono o WhatsApp</label><input id="c_tel" name="telefono" type="tel"></div><div><label for="c_mail">Correo</label><input id="c_mail" name="correo" type="email"></div></div>
+      <div><label for="c_msg">Mensaje</label><textarea id="c_msg" name="mensaje" required></textarea></div>
+      <input type="text" name="website" class="sr" tabindex="-1" autocomplete="off">
+      <p data-msg></p>
+      <button class="btn btn-dark" type="submit">Enviar mensaje <span class="arr" aria-hidden="true">→</span></button>
+    </form>
   </div>
-  <div class="bottom"><span>© <span data-year></span> IGS Group USA, Corp. Imágenes conceptuales; las configuraciones se definen para cada proyecto.</span><span>Sitio desarrollado por <a href="https://www.elevatia.do" target="_blank" rel="noopener">Elevatia</a></span></div>
-</div></footer>
-<a class="wa-float" data-wa href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg></a>
-<script src="/assets/js/site.js?v=1"></script>
-<script>document.querySelectorAll('[data-wa-alt]').forEach(el=>{el.style.display=window.SITE.whatsapp?'none':''});</script>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer" data-theme="dark">
+  <div class="wrap">
+    <p class="big reveal" aria-hidden="true"><span>Estructuras.</span><span>Suministros.</span><span><em>Acero.</em></span></p>
+    <div class="top">
+      <div><img src="/assets/img/logo-igs-white.png" alt="IGS Group USA" width="640" height="349" loading="lazy"><p style="margin-top:16px">Estructuras metálicas y suministros industriales para proyectos y operaciones industriales.</p></div>
+      <div><h3>Secciones</h3><ul><li><a href="#estructuras">Estructuras</a></li><li><a href="#mineria">Minería y suministros</a></li><li><a href="#proceso">Cómo trabajamos</a></li><li><a href="/precalificar/">Precalificar nave</a></li></ul></div>
+      <div><h3>Contacto</h3><ul><li><a data-email href="#"></a></li><li><a data-wa href="#">WhatsApp</a></li><li><a href="/en/" hreflang="en">English</a></li></ul></div>
+      <div><h3>Oficina</h3><p>10115 Costa del Sol Blvd<br>Doral, FL 33178<br>Estados Unidos</p></div>
+    </div>
+    <div class="bottom"><span>© <span data-year></span> IGS Group USA, Corp. Imágenes conceptuales; las configuraciones se definen para cada proyecto.</span><span>Sitio desarrollado por <a href="https://www.elevatia.do" target="_blank" rel="noopener">Elevatia</a></span></div>
+  </div>
+</footer>
+
+<script src="/assets/js/site-config.js"></script>
+<script src="/assets/js/site.js"></script>
+<script>
+(function(){
+  var d=document, w=window;
+  d.querySelectorAll('[data-wa-alt]').forEach(function(el){el.style.display=(w.SITE&&w.SITE.whatsapp)?'none':''});
+  // Header: fondo al hacer scroll, tema según la sección bajo la barra, estado del menú
+  var hdr=d.querySelector('.site-header'), tg=d.querySelector('.nav-toggle'), nav=d.querySelector('.nav');
+  var themed=[].slice.call(d.querySelectorAll('main [data-theme], .site-footer[data-theme]'));
+  function onS(){
+    hdr.classList.toggle('scrolled',w.scrollY>40);
+    var y=44, t='dark';
+    for(var i=0;i<themed.length;i++){var r=themed[i].getBoundingClientRect();if(r.top<=y&&r.bottom>y){t=themed[i].getAttribute('data-theme');break}}
+    if(hdr.getAttribute('data-theme')!==t)hdr.setAttribute('data-theme',t);
+  } onS();
+  function setMenu(open){
+    nav.classList.toggle('open',open);hdr.classList.toggle('menu-open',open);
+    tg.setAttribute('aria-expanded',open?'true':'false');d.body.classList.toggle('lock',open);
+    if(!open)tg.focus({preventScroll:true});
+  }
+  if(tg&&nav){
+    // site.js ya alterna .open en el nav; aquí sincronizamos header, aria y bloqueo de scroll
+    tg.addEventListener('click',function(){var o=nav.classList.contains('open');hdr.classList.toggle('menu-open',o);tg.setAttribute('aria-expanded',o?'true':'false');d.body.classList.toggle('lock',o)});
+    nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){hdr.classList.remove('menu-open');tg.setAttribute('aria-expanded','false');d.body.classList.remove('lock')})});
+    d.addEventListener('keydown',function(e){if(e.key==='Escape'&&nav.classList.contains('open'))setMenu(false)});
+    w.addEventListener('resize',function(){if(w.innerWidth>960&&nav.classList.contains('open'))setMenu(false)});
+  }
+  // Revelado: lo visible ya se marca de inmediato (fallback para capturas / sin IO)
+  var els=[].slice.call(d.querySelectorAll('.reveal')), vh=w.innerHeight;
+  els.forEach(function(el){if(el.getBoundingClientRect().top<vh*1.05)el.classList.add('in')});
+  if('IntersectionObserver' in w){
+    var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+    els.forEach(function(el){if(!el.classList.contains('in'))io.observe(el)});
+  } else els.forEach(function(el){el.classList.add('in')});
+  // Parallax sutil (solo transform; desactivado con reduced-motion o en pantallas pequeñas)
+  var rm=w.matchMedia('(prefers-reduced-motion: reduce)').matches, pl=[].slice.call(d.querySelectorAll('[data-parallax]')), tick=false;
+  function par(){tick=false;if(rm||w.innerWidth<760)return;var vh=w.innerHeight;pl.forEach(function(el){var p=el.parentElement.getBoundingClientRect();if(p.bottom<0||p.top>vh)return;var c=(p.top+p.height/2)-vh/2,lim=p.height*.08,t=Math.max(-lim,Math.min(lim,c*-parseFloat(el.dataset.parallax)));el.style.transform='translate3d(0,'+t.toFixed(1)+'px,0)'})}
+  function onScroll(){onS();if(!tick){tick=true;requestAnimationFrame(par)}}
+  w.addEventListener('scroll',onScroll,{passive:true});w.addEventListener('resize',onScroll);par();
+})();
+</script>
 </body>
 </html>
