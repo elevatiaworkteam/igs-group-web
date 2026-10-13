@@ -6,10 +6,10 @@
     es: {
       steps: ['Datos del proyecto', 'Características técnicas', 'Alcance y condición', 'Sus datos'],
       next: 'Siguiente', back: 'Atrás', submit: 'Obtener precalificación', sending: 'Procesando…', pd: 'Por definir', si: 'Sí', no: 'No',
-      required: 'Complete este campo.', needArea: 'Indique el área aproximada o el largo y el ancho.', needContact: 'Indique un teléfono o un correo.',
+      required: 'El campo Cliente o empresa es obligatorio.', needArea: 'Indique el área aproximada o el largo y el ancho.', needContact: 'Indique un teléfono o un correo.', needName: 'Indique la persona de contacto.',
       intro: 'Si un dato aún no está disponible, marque «Por definir» o deje el campo vacío. Con los datos confirmados le indicamos la categoría preliminar de su nave.',
       f: {
-        empresa: 'Cliente o empresa', proyecto: 'Nombre del proyecto', ubicacion: 'Ubicación del proyecto', uso: 'Uso principal de la nave', uso_otro: 'Especifique el uso',
+        empresa: 'Cliente o empresa *', proyecto: 'Nombre del proyecto', ubicacion: 'Ubicación del proyecto', uso: 'Uso principal de la nave', uso_otro: 'Especifique el uso',
         area_m2: 'Área aproximada (m²)', largo_m: 'Largo (m)', ancho_m: 'Ancho (m)', dims_hint: 'Si no conoce el área, indique largo y ancho.',
         altura_libre_m: 'Altura libre requerida (m)', altura_hint: 'Deje vacío si está por definir.', niveles: 'Número de niveles',
         mezzanine: '¿Necesita mezzanine o entrepiso?', aislamiento: '¿Necesita aislamiento térmico?', cerramiento: 'Tipo de cerramiento',
@@ -20,7 +20,7 @@
         areas_admin: '¿Necesita áreas administrativas integradas?', areas_desc: 'Área aproximada y requerimientos',
         alcance: 'Marque la opción que mejor describa el alcance esperado', condicion: 'Condición comercial deseada', llave_en_mano: 'Solicito alcance llave en mano',
         lugar_entrega: 'Lugar de entrega o destino previsto', trabajos_llave: 'Si solicita llave en mano, indique los trabajos que espera incluir', observaciones: 'Observaciones o requerimientos adicionales',
-        contacto: 'Persona de contacto', telefono: 'Teléfono o WhatsApp', correo: 'Correo electrónico', privacidad: 'Sus datos se usan únicamente para evaluar su proyecto y contactarle. No se comparten con terceros.'
+        contacto: 'Persona de contacto *', telefono: 'Teléfono o WhatsApp', correo: 'Correo electrónico', privacidad: 'Sus datos se usan únicamente para evaluar su proyecto y contactarle. No se comparten con terceros.'
       },
       usos: { almacen: 'Almacén', manufactura: 'Manufactura', logistica: 'Logística', taller: 'Taller', agroindustria: 'Agroindustria', otro: 'Otro' },
       cerr: { basico: 'Básico', panel_aislado: 'Panel aislado', mixto: 'Mixto', pd: 'Por definir' },
@@ -32,10 +32,10 @@
     en: {
       steps: ['Project data', 'Technical characteristics', 'Scope and terms', 'Your details'],
       next: 'Next', back: 'Back', submit: 'Get prequalification', sending: 'Processing…', pd: 'To be defined', si: 'Yes', no: 'No',
-      required: 'This field is required.', needArea: 'Enter the approximate area or the length and width.', needContact: 'Enter a phone number or an email.',
+      required: 'Client or company is required.', needArea: 'Enter the approximate area or the length and width.', needContact: 'Enter a phone number or an email.', needName: 'Enter the contact person.',
       intro: 'If a piece of data is not available yet, select "To be defined" or leave the field empty. With the confirmed data we will indicate the preliminary category of your building.',
       f: {
-        empresa: 'Client or company', proyecto: 'Project name', ubicacion: 'Project location', uso: 'Main use of the building', uso_otro: 'Specify the use',
+        empresa: 'Client or company *', proyecto: 'Project name', ubicacion: 'Project location', uso: 'Main use of the building', uso_otro: 'Specify the use',
         area_m2: 'Approximate area (m²)', largo_m: 'Length (m)', ancho_m: 'Width (m)', dims_hint: 'If you do not know the area, enter length and width.',
         altura_libre_m: 'Required clear height (m)', altura_hint: 'Leave empty if not defined yet.', niveles: 'Number of levels',
         mezzanine: 'Do you need a mezzanine or intermediate floor?', aislamiento: 'Do you need thermal insulation?', cerramiento: 'Cladding type',
@@ -46,7 +46,7 @@
         areas_admin: 'Do you need integrated office areas?', areas_desc: 'Approximate area and requirements',
         alcance: 'Select the option that best describes the expected scope', condicion: 'Desired commercial terms', llave_en_mano: 'I request a turnkey scope',
         lugar_entrega: 'Delivery location or intended destination', trabajos_llave: 'If you request turnkey, indicate the works you expect to include', observaciones: 'Remarks or additional requirements',
-        contacto: 'Contact person', telefono: 'Phone or WhatsApp', correo: 'Email', privacidad: 'Your data is used only to evaluate your project and contact you. It is not shared with third parties.'
+        contacto: 'Contact person *', telefono: 'Phone or WhatsApp', correo: 'Email', privacidad: 'Your data is used only to evaluate your project and contact you. It is not shared with third parties.'
       },
       usos: { almacen: 'Warehouse', manufactura: 'Manufacturing', logistica: 'Logistics', taller: 'Workshop', agroindustria: 'Agro-industry', otro: 'Other' },
       cerr: { basico: 'Basic', panel_aislado: 'Insulated panel', mixto: 'Mixed', pd: 'To be defined' },
@@ -133,7 +133,7 @@
     const fs = root.querySelector(`[data-step="${i}"]`); const err = fs.querySelector('[data-err]'); err.textContent = '';
     const d = data();
     if (i === 0) { if (!d.empresa) return err.textContent = I.required, false; if (!(+d.area_m2 > 0) && !(+d.largo_m > 0 && +d.ancho_m > 0)) return err.textContent = I.needArea, false; }
-    if (i === 3) { if (!d.contacto) return err.textContent = I.required, false; if (!d.telefono && !d.correo) return err.textContent = I.needContact, false; }
+    if (i === 3) { if (!d.contacto) return err.textContent = I.needName, false; if (!d.telefono && !d.correo) return err.textContent = I.needContact, false; }
     return true;
   }
   root.querySelectorAll('[data-next]').forEach(b => b.addEventListener('click', () => { if (validate(cur)) show(cur + 1); }));

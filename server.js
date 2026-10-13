@@ -106,7 +106,8 @@ app.post('/api/precalificar', limitar, async (req, res) => {
     const f = normalizar(b);
     const L = t(f.idioma); const es = f.idioma !== 'en';
     const faltan = [];
-    if (!f.contacto && !f.empresa) faltan.push(es ? 'nombre o empresa' : 'name or company');
+    if (!f.empresa) faltan.push(es ? 'cliente o empresa' : 'client or company');
+    if (!f.contacto) faltan.push(es ? 'persona de contacto' : 'contact person');
     if (!f.telefono && !f.correo) faltan.push(es ? 'teléfono o correo' : 'phone or email');
     if (faltan.length) return res.status(400).json({ ok: false, error: (es ? 'Faltan datos: ' : 'Missing data: ') + faltan.join(', ') });
     const cfg = await getConfig();
