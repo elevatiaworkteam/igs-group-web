@@ -19,6 +19,15 @@ const EMPRESA = {
 
 const app = express();
 app.set('trust proxy', true);
+// Dominio canónico (p. ej. www.igsgroupusa.com): redirige igsgroupusa.com y cualquier otro host al canónico, sin tocar localhost ni las direcciones provisionales de Coolify.
+const CANONICAL_HOST = process.env.CANONICAL_HOST || '';
+app.use((req, res, next) => {
+  const host = String(req.headers.host || '').toLowerCase();
+  if (CANONICAL_HOST && host && host !== CANONICAL_HOST && !host.startsWith('localhost') && !host.includes('sslip.io') && !/^\d+\.\d+\.\d+\.\d+/.test(host)) {
+    return res.redirect(301, 'https://' + CANONICAL_HOST + req.originalUrl);
+  }
+  next();
+});
 app.use(express.json({ limit: '1mb' }));
 app.use(express.urlencoded({ extended: true, limit: '1mb' }));
 
