@@ -11,7 +11,7 @@ const CONFIG_URL = process.env.CONFIG_URL || 'https://n8n.elevatia.do/webhook/ig
 const WEBHOOK_TOKEN = process.env.WEBHOOK_TOKEN || '';
 const EMPRESA = {
   nombre: process.env.EMPRESA_NOMBRE || 'IGS Group USA',
-  correo: process.env.EMPRESA_CORREO || 'sfernandez@igsgroupusa.com',
+  correo: process.env.EMPRESA_CORREO || 'info@igsgroupusa.com',
   whatsapp: process.env.EMPRESA_WHATSAPP || '',          // se llena cuando exista el número de Miami
   responsable: process.env.EMPRESA_RESPONSABLE || 'Samuel Fernández',
   direccion: process.env.EMPRESA_DIRECCION || '10115 Costa del Sol Blvd, Doral, FL 33178, USA'

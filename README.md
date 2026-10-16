@@ -20,7 +20,7 @@ Landing (español e inglés) + ficha de precalificación en línea con clasifica
 | `WEBHOOK_TOKEN` | debe coincidir con el nodo **Validar** del workflow "IGS Web - Formularios" |
 | `CANONICAL_HOST` | dominio canónico, p. ej. `www.igsgroupusa.com`: redirige el resto de hosts (igsgroupusa.com, igsusa.com) con 301 |
 | `EMPRESA_WHATSAPP` | número de WhatsApp de IGS en formato internacional (ej. `+1 305 555 0123`) cuando exista |
-| `EMPRESA_CORREO` | correo de IGS (por defecto `sfernandez@igsgroupusa.com`) |
+| `EMPRESA_CORREO` | correo de IGS (por defecto `info@igsgroupusa.com`) |
 
 ## Configuración editable por IGS
 Google Sheet **"IGS Group USA - Precalificaciones web"**: hoja `Config` (umbrales de altura y luz, bandas por m², condición, vigencia, correo de aviso), hoja `Registro` (cada precalificación, con enlaces a los PDF en Drive) y hoja `Solicitudes` (suministros y contacto). El servidor relee `Config` cada 10 minutos.
